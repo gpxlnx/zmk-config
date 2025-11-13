@@ -40,18 +40,18 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE       &mt N1 NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5                                 &mt CARET NUMBER_6   &mt AMPERSAND N7   &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0     &mt SQT DOUBLE_QUOTES
-&kp TAB         &kp Q            &kp W                 &kp E              &kp R                &kp T                                          &kp Y                &kp U              &kp I                &kp O                    &kp P                        &kp BSPC
-&kp ESCAPE      &mt LGUI A       &mt LEFT_CONTROL S    &mt LSHIFT D       &mt LEFT_ALT F       &mt LEFT_GUI G                                 &mt RIGHT_COMMAND H  &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RALT L               &mt RIGHT_COMMAND SEMICOLON  &kp MINUS
-&kp LEFT_SHIFT  &lt 0 Z          &kp X                 &kp C              &kp V                &mt SPACE V     &kp C_MUTE    &kp PRINTSCREEN  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &lt 0 SLASH                  &kp RSHFT
-                                 &kp LMETA             &kp LEFT_CONTROL   &lt 5 ESCAPE         &lt 3 TAB       &none         &none            &lt 4 BACKSPACE      &lt 6 DEL          &kp LEFT_ARROW       &kp RIGHT_ARROW
+&kp GRAVE       &mt N1 NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5                                  &mt CARET NUMBER_6   &mt AMPERSAND N7   &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0     &mt SQT DOUBLE_QUOTES
+&kp TAB         &kp Q            &kp W                 &kp E              &kp R                &kp T                                           &kp Y                &kp U              &kp I                &kp O                    &kp P                        &kp BSPC
+&kp ESCAPE      &mt LGUI A       &mt LEFT_CONTROL S    &mt LSHIFT D       &mt LEFT_ALT F       &mt LEFT_GUI G                                  &mt RIGHT_COMMAND H  &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RALT L               &mt RIGHT_COMMAND SEMICOLON  &kp MINUS
+&kp LEFT_SHIFT  &lt 0 Z          &kp X                 &kp C              &kp V                &mt SPACE V     &kp C_MUTE     &kp PRINTSCREEN  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &lt 0 SLASH                  &kp RSHFT
+                                 &kp LMETA             &kp LEFT_CONTROL   &lt 5 ESCAPE         &lt 3 TAB       &lt 1 SPACE    &lt 2 ENTER      &lt 4 BACKSPACE      &lt 6 DEL          &kp LEFT_ARROW       &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Mouse {
-            display-name = "Mouse";
+        mouse {
+            display-name = "mouse";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -71,7 +71,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Sym {
+        sym {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -79,7 +79,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "Sym";
+            display-name = "sym";
             bindings = <
 &none  &none           &none            &none         &none                 &none                                      &none  &none  &none  &none  &none  &none
 &none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE                            &none  &none  &none  &none  &none  &none

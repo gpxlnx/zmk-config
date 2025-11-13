@@ -21,8 +21,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <1 1>;
+            then-layer = <2>;
         };
     };
 
@@ -43,30 +43,8 @@
 &kp GRAVE       &mt N1 NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5                                 &mt CARET NUMBER_6   &mt AMPERSAND N7   &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0     &mt SQT DOUBLE_QUOTES
 &kp TAB         &kp Q            &kp W                 &kp E              &kp R                &kp T                                          &kp Y                &kp U              &kp I                &kp O                    &kp P                        &kp BSPC
 &kp ESCAPE      &mt LGUI A       &mt LEFT_CONTROL S    &mt LSHIFT D       &mt LEFT_ALT F       &mt LEFT_GUI G                                 &mt RIGHT_COMMAND H  &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RALT L               &mt RIGHT_COMMAND SEMICOLON  &kp ESCAPE
-&kp LEFT_SHIFT  &lt 1 Z          &kp X                 &kp C              &kp V                &mt SPACE V     &kp C_MUTE    &kp PRINTSCREEN  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &lt 1 SLASH                  &kp RSHFT
-                                 &kp LMETA             &kp LALT           &lt 6 ESCAPE         &lt 4 SPACE     &lt 2 TAB     &lt 3 SPACE      &lt 5 BACKSPACE      &lt 7 DEL          &kp LEFT_ARROW       &kp RIGHT_ARROW
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        button {
-            display-name = "button";
-
-            // TODO: Some binds are waiting for shifted keycode support.
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
-            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
-            //               |     |      |      |      |        |  |       |      |       |       |      |
-
-            bindings = <
-&trans     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
-&kp SLASH  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI   &kp COLON  &kp BSLH  &trans
-                      &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
+&kp LEFT_SHIFT  &lt 0 Z          &kp X                 &kp C              &kp V                &mt SPACE V     &kp C_MUTE    &kp PRINTSCREEN  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &lt 0 SLASH                  &kp RSHFT
+                                 &kp LMETA             &kp LALT           &lt 5 ESCAPE         &lt 3 SPACE     &lt 1 TAB     &lt 2 SPACE      &lt 4 BACKSPACE      &lt 6 DEL          &kp LEFT_ARROW       &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

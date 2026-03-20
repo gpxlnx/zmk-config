@@ -24,3 +24,9 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
     shield: sofle_right
+  - board: nice_nano_v2
+    shield: prototypeone_left
+    artifact-name: prototypeone_left
+  - board: nice_nano_v2
+    shield: prototypeone_right
+    artifact-name: prototypeone_right
